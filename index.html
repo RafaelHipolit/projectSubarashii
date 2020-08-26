@@ -4,13 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
-    <h1>Poject 素晴らしい</h1>
+    <h1>Project 素晴らしい</h1>
     <h2>projectSubarashii</h2>
     <h3>site do rafael</h3>
     <hr>
-    like maozinha!
     <img src="img/RemRamDance.gif" alt="">
+
+    <div id="boxBackWelcome">
+        <div id="boxWelcome">
+            <p>Bem-vindo ao site do Rafael</p>
+            <div>prossegir</div>
+        </div>
+    </div>
+    
+
+    <p style="font-size: 300px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci fuga vitae perspiciatis iusto, earum laborum necessitatibus hic tenetur ad doloribus. Hic iusto culpa quis deserunt ducimus enim numquam laborum est.</p>
+
+    <script>
+
+        var boxBackWelcome = document.getElementById("boxBackWelcome");
+        boxBackWelcome.style.width = "100%";
+        boxBackWelcome.style.height = "100%";
+        boxBackWelcome.style.position = "fixed";
+        boxBackWelcome.style.top = "0px";
+        boxBackWelcome.style.left = "0px";
+        boxBackWelcome.style.backgroundColor = "rgba(0, 0, 0, 0.7)"
+        
+        var boxWelcome = document.getElementById("boxWelcome");
+        boxWelcome.style.width = "40%";
+        boxWelcome.style.height = "30%";
+        boxWelcome.style.backgroundColor = "white"
+        boxWelcome.style.boxShadow = "2px 2px 10px rgba(0, 0, 0, 0.5)";
+        boxWelcome.style.margin = "auto";
+        boxWelcome.style.marginTop = "20%"
+        /*
+        
+        boxWelcome.style.position = "fixed";
+        boxWelcome.style.top = "35%";
+        boxWelcome.style.left = Number((document.body.offsetWidth)/2-260)+"px";
+        
+        */
+
+        addEventListener("resize",vaiprocentro);
+        function vaiprocentro(){
+            boxWelcome.style.left = Number((document.body.offsetWidth)/2)+"px";
+        }
+
+        document.write(document.body.offsetWidth);
+    </script>
+
 </body>
 </html>
