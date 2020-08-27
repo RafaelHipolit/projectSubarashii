@@ -16,12 +16,12 @@
     <div id="boxBackWelcome">
         <div id="boxWelcome">
             <p>Bem-vindo ao site do Rafael</p>
-            <div>prossegir</div>
+            <div id="boxWelcomeGo">prossegir</div>
         </div>
     </div>
     
 
-    <p style="font-size: 300px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci fuga vitae perspiciatis iusto, earum laborum necessitatibus hic tenetur ad doloribus. Hic iusto culpa quis deserunt ducimus enim numquam laborum est.</p>
+    <p style="font-size: 50px;">Batata>_<</p>
 
     <script>
 
@@ -54,6 +54,13 @@
         }
 
         document.write(document.body.offsetWidth);
+
+        addEventListener("click",sumiu);
+        function sumiu(){
+            var boxWelcome = document.getElementById("boxWelcomeGo");
+            document.getElementById("boxBackWelcome").style.display = "none";
+        }
+
     </script>
 
 </body>
