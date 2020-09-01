@@ -46,11 +46,17 @@ main{
 }
 
 #ramDance{
-    position: absolute;
-    
+    position: absolute;  
     bottom: 0px;
     left: -30px;
     width: 14%;
+}
+
+#remDance{
+    position: absolute;  
+    bottom: -15px;
+    right: 0px;
+    width: 10.5%;
 }
 
 footer{
