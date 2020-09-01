@@ -9,10 +9,6 @@
     --robotoFont: 'Roboto', monospace, sans-serif;
 }
 
-body{
-    font-family: var(--robotoFont);
-}
-
 #boxBackWelcome{
     width: 100%;
     height: 100%;
@@ -23,6 +19,7 @@ body{
 }
 
 #boxWelcome{
+    font-family: var(--robotoFont);
     max-width: 40%;
     min-width: 380px;
     height: 35%;

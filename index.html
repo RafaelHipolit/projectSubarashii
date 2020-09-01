@@ -5,15 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projectSubarashii</title>
     <link rel="stylesheet" href="css/index_css.css">
+    <link rel="stylesheet" href="css/geral_css.css">
+
 </head>
 <body>
-    <h1>Project 素晴らしい</h1>
-    <h2>projectSubarashii</h2>
-    <h3>site do rafael</h3>
-    <hr>
-    <img src="img/RemRamDance.gif" alt="">
-    <a href="https://github.com/RafaelHipolit/projectSubarashii">codigo do site</a>
+    <div id="corpo">
+        <header>
+            <h1>Project 素晴らしい</h1>
+            <h2>projectSubarashii</h2>
+            <h3>Site do Rafael</h3>
+        </header>
 
+        <hr>
+        <nav>
+            <div><p> MENU 1</p></div>
+            <div><p> MENU 2</p></div>
+            <div><p> MENU 3</p></div>
+        </nav>
+        <hr>
+
+        <main>
+
+            <a href="https://github.com/RafaelHipolit/projectSubarashii">codigo do site</a>
+
+            <p style="font-size: 10vw;">Batata>_<</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi sed facere molestias. Ea, voluptatem quibusdam, quis voluptas laudantium illo officia consequatur voluptates repellat odio, praesentium qui ipsum eveniet reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi sed facere molestias. Ea, voluptatem quibusdam, quis voluptas laudantium illo officia consequatur voluptates repellat odio, praesentium qui ipsum eveniet reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi sed facere molestias. Ea, voluptatem quibusdam, quis voluptas laudantium illo officia consequatur voluptates repellat odio, praesentium qui ipsum eveniet reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi sed facere molestias. Ea, voluptatem quibusdam, quis voluptas laudantium illo officia consequatur voluptates repellat odio, praesentium qui ipsum eveniet reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi sed facere molestias. Ea, voluptatem quibusdam, quis voluptas laudantium illo officia consequatur voluptates repellat odio, praesentium qui ipsum eveniet reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi sed facere molestias. Ea, voluptatem quibusdam, quis voluptas laudantium illo officia consequatur voluptates repellat odio, praesentium qui ipsum eveniet reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi sed facere molestias. Ea, voluptatem quibusdam, quis voluptas laudantium illo officia consequatur voluptates repellat odio, praesentium qui ipsum eveniet reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi sed facere molestias. Ea, voluptatem quibusdam, quis voluptas laudantium illo officia consequatur voluptates repellat odio, praesentium qui ipsum eveniet reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi sed facere molestias. Ea, voluptatem quibusdam, quis voluptas laudantium illo officia consequatur voluptates repellat odio, praesentium qui ipsum eveniet reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi sed facere molestias. Ea, voluptatem quibusdam, quis voluptas laudantium illo officia consequatur voluptates repellat odio, praesentium qui ipsum eveniet reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi sed facere molestias. Ea, voluptatem quibusdam, quis voluptas laudantium illo officia consequatur voluptates repellat odio, praesentium qui ipsum eveniet reiciendis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure animi sed facere molestias. Ea, voluptatem quibusdam, quis voluptas laudantium illo officia consequatur voluptates repellat odio, praesentium qui ipsum eveniet reiciendis.</p>
+        </main>
+    </div>
+
+    <footer>
+        <p>projectSubarashii</p>
+    </footer>
+    
+    <div id="remRamDace">
+        <img id="ramDance" src="img/RamDance6.gif" alt="">
+    </div>
+    
+
+
+
+    <!-- caixa de introdução -->
     <div id="boxBackWelcome">
         <div id="boxWelcome">
             <p id="boxWelcomeTxt"></p>
@@ -23,104 +66,8 @@
             <div id="boxWelcome-btnNext" class="boxWelcome-btn">Prossegir</div>
         </div>
     </div>
-    
 
-    <p style="font-size: 50px;">Batata>_<</p>
-
-    <script>
-        var boxBackWelcome = document.getElementById("boxBackWelcome");
-        var boxWelcome = document.getElementById("boxWelcome");
-
-        document.write(document.body.offsetWidth);       
-        
-        var msgList = ["Bem-vindo ao site do Rafael"];
-        msgList.push('Acesse o <a href="https://github.com/RafaelHipolit/projectSubarashii">codigo do site</a>');
-        msgList.push("Estamos sempre em atualizações!");
-
-        var atualMsg = 0;
-        var txt = document.getElementById("boxWelcomeTxt");
-
-        var btnNext = document.getElementById("boxWelcome-btnNext");
-        var btnBack = document.getElementById("boxWelcome-btnBack");
-
-        setDots();
-        shinyDot(0);
-
-        txt.innerText = msgList[0];
-        btnBackDontWork();
-
-        btnNext.addEventListener("click",clickNext);
-        function clickNext(){
-            atualMsg++;
-            funcBtn();
-            
-        }
-       
-        btnBack.addEventListener("click",clickBack);
-        function clickBack(){
-            if(atualMsg != 0){
-                atualMsg--;
-                funcBtn();
-            }                      
-        }
-
-        function setDots(){
-            num = msgList.length;
-            var lenghtDot = (Number(document.getElementById("boxWelcomeDots").offsetWidth)/num)-6;            
-   
-            for (let i = 0; i < num; i++) {
-
-                var dot = document.createElement("div");
-
-                dot.classList = "dots"
-                dot.style.width = lenghtDot+"px";
-                
-                document.getElementById("boxWelcomeDots").appendChild(dot);
-            }
-
-        }
-
-        function shinyDot(n){
-            num = msgList.length;
-            var dot = document.getElementsByClassName("dots")[n];
-            dot.style.backgroundColor = "#2700ff";
-            for (let i = 0; i < num; i++) {
-                if(i != n){
-                    dot = document.getElementsByClassName("dots")[i];
-                    dot.style.backgroundColor = "rgba(95, 207, 235, 0.644)";
-                }
-            }
-        }
-
-        function funcBtn(){
-            if(atualMsg == msgList.length){
-                boxBackWelcome.style.display = "none";
-                return none;
-            }
-            if(atualMsg == 0){
-                btnBackDontWork();
-            }else{
-                btnBackWork();
-            }
-            for (let i = 0; i < msgList.length; i++) {
-                if(atualMsg == i){
-                    txt.innerHTML = msgList[i];
-                    shinyDot(i);
-                }
-            }
-        }
-
-        function btnBackWork(){
-            btnBack.classList = "btnBackWork";
-            btnBack.style.cursor ="pointer";
-        }
-
-        function btnBackDontWork(){
-            btnBack.classList = "btnBackDontWork"
-            btnBack.style.cursor ="auto";
-        }
-
-    </script>
+    <script src="js/index_js.js"></script>
 
 </body>
 </html>
