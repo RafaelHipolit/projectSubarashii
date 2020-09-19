@@ -34,7 +34,7 @@ var boxBackWelcome = document.getElementById("boxBackWelcome");
 
         function setDots(){
             num = msgList.length;
-            var lenghtDot = (Number(document.getElementById("boxWelcomeDots").offsetWidth)/num)-(2*num);            
+            var lenghtDot = (Number(document.getElementById("boxWelcomeDots").offsetWidth)/num)-(3*num);            
    
             for (let i = 0; i < num; i++) {
 
