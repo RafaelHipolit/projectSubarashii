@@ -16,6 +16,29 @@
     padding: 0px;
 }
 
+#navTop{
+    width: auto;
+    border-bottom: solid 1px black;
+    height: 40px;
+    background-color: gray;
+}
+#divNavTop{
+    max-width: 80%;
+    margin: auto
+}
+#btnLoginNavTop{
+    font-size: 1.5vw;
+    font-family: var(--robotoMonoFont);
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: white;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    float: right;
+    font-style: normal;
+}
+
 #corpo{
     max-width: 80%;
     margin:auto;
